@@ -3,9 +3,7 @@ from . import views
 
 urlpatterns = [
    path('', views.index, name='index'),
-   path('club/', views.users, name='users')
+   path('resources/', views.resources, name='resources'),
+   path('meetings/', views.meetings, name='meetings'),
+   path('meetingdetail/<int:id>', views.meetingdetail, name='detail'),
 ]
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
